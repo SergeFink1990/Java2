@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+
+public class NamesWithA {
+    public static void main(String[] args) {
+        ArrayList<String> names = new ArrayList<>();
+        names.add("Артём");
+        names.add("Евгений");
+        names.add("Матвей");
+        names.add("Мария");
+        names.add("Антон");
+        names.add("Сергей");
+        names.add("Алина");
+         names.add("Афанасий");
+
+        System.out.println("Все имена:");
+        for (String name : names) {
+            System.out.println("- " + name);
+        }
+
+        System.out.println("\nИмена, начинающиеся на 'А':");
+        for (String name : names) {
+            if (name.startsWith("А")) {
+                System.out.println("- " + name);
+            }
+        }
+    }
+}
