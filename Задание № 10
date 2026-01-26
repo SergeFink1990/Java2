@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class ArrayListPractice {
+    public static void main(String[] args) {
+        ArrayList<String> fruits = new ArrayList<>();
+        fruits.add("Яблоко");
+        fruits.add("Банан");
+        fruits.add("Апельсин");
+        fruits.add("Киви");
+        fruits.add("Манго");
+
+        System.out.println("Список фруктов:");
+        for (String fruit : fruits) {
+            System.out.println("- " + fruit);
+        }
+
+        fruits.remove(2);
+        System.out.println("\nПосле удаления третьего элемента:");
+        for (String fruit : fruits) {
+            System.out.println("- " + fruit);
+        }
+
+        boolean hasApple = fruits.contains("Яблоко");
+        System.out.println("\nСодержит 'Яблоко'? " + hasApple);
+
+        Collections.sort(fruits);
+        System.out.println("\nОтсортированный список:");
+        for (String fruit : fruits) {
+            System.out.println("- " + fruit);
+        }
+    }
+}
