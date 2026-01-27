@@ -1,0 +1,48 @@
+// Родительский класс
+class Animal {
+    protected String name;
+    protected int age;
+
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public void makeSound() {
+        System.out.println("Животное издаёт звук");
+    }
+}
+
+// Дочерний класс Dog
+class Dog extends Animal {
+    public Dog(String name, int age) {
+        super(name, age);
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("Гав-гав!");
+    }
+}
+
+// Дочерний класс Cat
+class Cat extends Animal {
+    public Cat(String name, int age) {
+        super(name, age);
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("Мяу!");
+    }
+}
+
+// Точка входа
+public class InheritancePractice {
+    public static void main(String[] args) {
+        Dog dog = new Dog("Бобик", 3);
+        Cat cat = new Cat("Мурка", 2);
+        dog.makeSound(); // Гав-гав!
+        cat.makeSound(); // Мяу!
+    }
+}
