@@ -1,0 +1,77 @@
+import java.util.Scanner;
+
+public class MAIN {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // 1. Цикл for: числа от 1 до 10
+        System.out.println("1. Цикл for (числа от 1 до 10):");
+        for (int i = 1; i <= 10; i++) {
+            System.out.print(i + " ");
+        }
+        System.out.println("\n");
+
+        // 2. Цикл while: сумма чисел от 1 до 100
+        System.out.println("2. Цикл while (сумма 1..100):");
+        int sum = 0;
+        int num = 1;
+        while (num <= 100) {
+            sum += num;
+            num++;
+        }
+        System.out.println("Сумма чисел от 1 до 100 = " + sum);
+        System.out.println();
+
+        // 3. Цикл do-while: ввод пароля
+        System.out.println("3. Цикл do-while (проверка пароля):");
+        String password;
+        do {
+            System.out.print("Введите пароль: ");
+            password = scanner.nextLine();
+            if (!password.equals("java123")) {
+                System.out.println("Неверный пароль. Попробуйте снова.");
+            }
+        } while (!password.equals("java123"));
+        System.out.println("Доступ разрешён!");
+
+        scanner.close();
+    }
+}import java.util.Scanner;
+
+public class MAIN {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // 1. Цикл for: числа от 1 до 10
+        System.out.println("1. Цикл for (числа от 1 до 10):");
+        for (int i = 1; i <= 10; i++) {
+            System.out.print(i + " ");
+        }
+        System.out.println("\n");
+
+        // 2. Цикл while: сумма чисел от 1 до 100
+        System.out.println("2. Цикл while (сумма 1..100):");
+        int sum = 0;
+        int num = 1;
+        while (num <= 100) {
+            sum += num;
+            num++;
+        }
+        System.out.println("Сумма чисел от 1 до 100 = " + sum);
+        System.out.println();
+
+        // 3. Цикл do-while: ввод пароля
+        System.out.println("3. Цикл do-while (проверка пароля):");
+        String password;
+        do {
+            System.out.print("Введите пароль: ");
+            password = scanner.nextLine();
+            if (!password.equals("java123")) {
+                System.out.println("Неверный пароль. Попробуйте снова.");
+            }
+        } while (!password.equals("java123"));
+        System.out.println("Доступ разрешён!");
+
+        scanner.close();
+    }
+}
